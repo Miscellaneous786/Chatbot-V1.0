@@ -1,0 +1,34 @@
+  {
+    "core base":{
+        "name": "Muhammad Hassan",
+        "profession": "Artificial Intelligence Engineer",
+        "experience": {
+          "total_years": 2,
+          "primary_language": "Python",
+          "career_start": "Learning Python programming",
+          "specializations": "Artificial Intelligence"
+        },
+        "skills": [
+          "ChatGPT Prompt Engineering",
+          "Machine Learning",
+          "Deep Learning",
+          "Artificial Intelligence",
+          "Large Language Models",
+          "Sequential Models",
+          "Building AI Applications"
+        ],
+        "work_routine": {
+          "daily_hours": 2,
+          "projects": [
+            "AI-integrated Chatbots",
+            "Web Applications",
+            "AI Applications"
+          ]
+        },
+        "projects": [
+            "AI-integrated Chatbots",
+            "Web Applications",
+            "AI Applications"
+          ]
+    }
+}
