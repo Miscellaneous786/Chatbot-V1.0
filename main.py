@@ -5,7 +5,7 @@ import json
 API_KEY = "AIzaSyDPXUpQ-q68wFXESYaR6EOIWREs9N2TqNY"
 genai.configure(api_key=API_KEY)
 
-knowledge_base = r"main\core.json"
+knowledge_base = r"core.json"
 
 # Load Knowledge Base
 with open(knowledge_base, "r", encoding="utf-8") as f:
