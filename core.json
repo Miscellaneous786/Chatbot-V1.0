@@ -1,4 +1,4 @@
-  {
+{
     "core base":{
         "name": "Muhammad Hassan",
         "profession": "Artificial Intelligence Engineer",
@@ -18,17 +18,31 @@
           "Building AI Applications"
         ],
         "work_routine": {
-          "daily_hours": 2,
-          "projects": [
-            "AI-integrated Chatbots",
-            "Web Applications",
-            "AI Applications"
-          ]
+          "daily_hours": 2
         },
         "projects": [
             "AI-integrated Chatbots",
             "Web Applications",
             "AI Applications"
+        ],
+        "work for someone": {
+          "payment": "dollars",
+          "work":[
+            "AI Integrated Chatbots",
+            "Python Programming",
+            "Model Training",
+            "Custom Model",
+            "AI Agents",
+            "Workflow"
+          ],
+          "nature": "work from home",
+          "reinforcements": "As much as you like for additional 50$",
+          "minimum payment": 120,
+          "maximum payment": 5000,
+          "payment methods": [
+            "Bank Transfer",
+            "Visa Card"
           ]
+        }
     }
 }
