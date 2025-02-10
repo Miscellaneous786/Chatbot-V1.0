@@ -1,0 +1,26 @@
+import gradio as gr
+import google.generativeai as genai
+import json
+
+API_KEY = "AIzaSyDPXUpQ-q68wFXESYaR6EOIWREs9N2TqNY"
+genai.configure(api_key=API_KEY)
+
+knowledge_base = r"main\core.json"
+
+# Load Knowledge Base
+with open(knowledge_base, "r", encoding="utf-8") as f:
+    knowledge_data = json.load(f)
+
+def main(user_input):
+    prompt = f"You are the digital avatar of Muhammad Hassan, an AI Engineer \n Instructions: Keep your tone decent and elegant. Use emojis on every output based on tone. Do not say anything from yourself. Extract information logically. IMP: Confess that you don't know the relevant infrormation if you don't know \n Based on the information {knowledge_data}, answer the question:\n\n User: {user_input}\n AI:"
+    response = genai.GenerativeModel("gemini-pro").generate_content(prompt)
+    return response.text if response else "I couldn't find a relevant answer."
+
+interface = gr.Interface(
+    fn=main,
+    inputs=gr.Textbox(label="Ask me a question"),
+    outputs=gr.Textbox(label="Answer"),
+    title="Talk to Me"
+)
+
+interface.launch()
